@@ -1,0 +1,123 @@
+body {
+  margin: 0 auto;
+  width: 1440px;
+  height: 800px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 300px;
+  background: url(../images/bg-desktop-light.jpg) no-repeat;
+  /* position: absolute; */
+}
+
+.main {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.header_text {
+  background: red;
+  display: block;
+  width: 540px;
+  line-height: 1.5;
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 70px;
+  left: 700px;
+}
+
+.imgBtn {
+  border: none;
+  background: white;
+}
+
+.todoBox {
+  position: absolute;
+  top: -150px;
+  left: 450px;
+}
+
+.checkInput {
+  width: 100%;
+  border: none;
+}
+
+.checkInput::placeholder {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+#todoForm {
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  /* width: 540px; */
+  height: 64px;
+  /* background: yellow; */
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 grey;
+}
+
+.todoList {
+  /* padding: 10px; */
+  width: 540px;
+  height: 450px;
+  margin-top: 20px;
+  /* background: pink; */
+  /* border: 4px solid red; */
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 grey;
+}
+
+#listForm {
+  /* width: 540px; */
+  height: 64px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  /* background: yellow; */
+  border-bottom: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.todoList_checkBox {
+  /* background: blue; */
+  padding: 10px 20px;
+  color: #ccc;
+  font-size: 11px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.todoList_text {
+  width: 170px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.todoList_checkBox {
+  border: none;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
