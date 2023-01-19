@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE-=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/4673c7e6be.js"
@@ -20,79 +24,81 @@
     ></script>
     <script defer src="./js/main.js"></script>
     <title>Todo list</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
+  <!-- body -->
   <body>
-    <!-- header -->
+    <!-- header start -->
     <header class="header">
       <!-- header의 텍스트 -->
-      <h1 class="header_text">T O D O</h1>
+      <h1 class="header_text">
+        T&nbsp;O&nbsp;D&nbsp;O
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+          <path
+            class="sun"
+            fill="#FFF"
+            fill-rule="evenodd"
+            d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+          />
+        </svg>
+      </h1>
     </header>
+    <!-- header finish -->
 
-    <!-- 본문 -->
+    <!-- main start -->
     <main class="main">
       <div class="todoBox">
         <form id="todoForm">
-          <button class="imgBtn" type="button">
-            <!-- 체크박스를 폰트어썸에서 아이콘으로 만들어준다. -->
-            <i class="fa-regular fa-xl fa-circle-check"></i>
-          </button>
+          <fieldset>
+            <legend>투두리스트 입력창</legend>
+            <button class="imgBtn" type="button">
+              <!-- <i class="fa-regular fa-xl fa-circle-check"></i> -->
+            </button>
 
-          <!-- 텍스트를 인풋할 창 -->
-          <input
-            required
-            class="checkInput"
-            type="text"
-            placeholder="Creat a new todo.."
-          />
+            <!-- 텍스트를 인풋할 창 -->
+            <label for="checkInput"></label>
+            <input
+              required
+              id="checkInput"
+              type="text"
+              placeholder="Creat a new todo..."
+            />
+          </fieldset>
         </form>
 
         <!-- 텍스트가 입력되면 체크리스트가 찍힐 창 -->
         <div class="todoList">
-          <form id="listForm">
-            <button class="imgBtn" type="button">
-              <i class="fa-solid fa-xl fa-circle-check"></i>
+          <ul class="todoList_box">
+            <button type="button" class="imgBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
+                <path
+                  fill="none"
+                  stroke="blue"
+                  stroke-width="2"
+                  d="M1 4.304L3.696 7l6-6"
+                />
+              </svg>
             </button>
+            <li class="todoList_list">아무말대잔치</li>
+          </ul>
+        </div>
 
-            <input
-              required
-              class="checkInput"
-              type="text"
-              placeholder="Complete online JavaScript course"
-            />
-          </form>
-          <div class="todoList_checkBox">
-            <button class="checkBox_btn" type="button">
-              <span>items left</span>
-            </button>
-            <div class="todoList_text">
-              <button class="checkBox_btn" type="button">
-                <span>All</span>
-              </button>
-              <button class="checkBox_btn" type="button">
-                <span>Active</span>
-              </button>
-              <button class="checkBox_btn" type="button">
-                <span>Completed</span>
-              </button>
-            </div>
-            <button class="checkBox_btn" type="button">
-              <span>Clear Completed</span>
-            </button>
+        <div class="todoList_status">
+          <div>0&nbsp;items&nbsp;left</div>
+          <div>
+            <span>All</span>
+            <span>Active</span>
+            <span>Completed</span>
           </div>
+          <div>Clear&nbsp;Completed</div>
         </div>
       </div>
     </main>
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <!-- main finish -->
 
+    <!-- footer -->
     <footer class="footer">
       <small>Drog and drop reorder list</small>
     </footer>
+    <!-- footer finish -->
   </body>
 </html>
