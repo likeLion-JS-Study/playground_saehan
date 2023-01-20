@@ -27,78 +27,56 @@
   </head>
   <!-- body -->
   <body>
-    <!-- header start -->
-    <header class="header">
-      <!-- header의 텍스트 -->
-      <h1 class="header_text">
-        T&nbsp;O&nbsp;D&nbsp;O
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-          <path
-            class="sun"
-            fill="#FFF"
-            fill-rule="evenodd"
-            d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
-          />
-        </svg>
-      </h1>
-    </header>
-    <!-- header finish -->
-
     <!-- main start -->
     <main class="main">
-      <div class="todoBox">
+      <section class="wrapper">
+        <!-- header start -->
+        <header class="header">
+          <!-- header의 텍스트 -->
+          <h1>T&nbsp;O&nbsp;D&nbsp;O</h1>
+          <button type="button" class="btn theme-btn light">
+            <img src="./images/icon-moon.svg" alt="moon icon" />
+          </button>
+        </header>
+        <!-- header finish -->
+
         <form id="todoForm">
           <fieldset>
             <legend>투두리스트 입력창</legend>
-            <button class="imgBtn" type="button">
-              <!-- <i class="fa-regular fa-xl fa-circle-check"></i> -->
-            </button>
+            <span class="circle"></span>
 
             <!-- 텍스트를 인풋할 창 -->
-            <label for="checkInput"></label>
+            <label for="checkInput" class="a11y-hidden"></label>
             <input
               required
               id="checkInput"
               type="text"
               placeholder="Creat a new todo..."
             />
+            <button type="button" class="addTodo">+</button>
           </fieldset>
         </form>
 
         <!-- 텍스트가 입력되면 체크리스트가 찍힐 창 -->
-        <div class="todoList">
-          <ul class="todoList_box">
-            <button type="button" class="imgBtn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9">
-                <path
-                  fill="none"
-                  stroke="blue"
-                  stroke-width="2"
-                  d="M1 4.304L3.696 7l6-6"
-                />
-              </svg>
-            </button>
-            <li class="todoList_list">아무말대잔치</li>
-          </ul>
+        <div class="todo-container">
+          <ul class="todoList"></ul>
+          <div class="action">
+            <p class="left-text">
+              <span class="count">0</span>&nbsp;items&nbsp;left
+            </p>
+            <div class="filters">
+              <a href="#" class="filters-btn all active">All</a>
+              <a href="#" class="filters-btn live">Active</a>
+              <a href="#" class="filters-btn completed-btn">Completed</a>
+            </div>
+            <a href="#" class="clear">Clear&nbsp;Completed</a>
+          </div>
         </div>
 
-        <div class="todoList_status">
-          <div>0&nbsp;items&nbsp;left</div>
-          <div>
-            <span>All</span>
-            <span>Active</span>
-            <span>Completed</span>
-          </div>
-          <div>Clear&nbsp;Completed</div>
-        </div>
-      </div>
+        <p class="info">Drog and drop reorder list</p>
+      </section>
+      <!-- section finish -->
     </main>
     <!-- main finish -->
-
-    <!-- footer -->
-    <footer class="footer">
-      <small>Drog and drop reorder list</small>
-    </footer>
-    <!-- footer finish -->
   </body>
 </html>
