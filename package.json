@@ -1,0 +1,32 @@
+{
+  "name": "playground_saehan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likeLion-JS-Study/playground_saehan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/likeLion-JS-Study/playground_saehan/issues"
+  },
+  "homepage": "https://github.com/likeLion-JS-Study/playground_saehan#readme",
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-functional": "^4.4.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
