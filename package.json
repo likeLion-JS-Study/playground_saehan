@@ -28,5 +28,12 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    }
   }
 }
