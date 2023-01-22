@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable functional/immutable-data */
 /* eslint-disable semi */
-/* eslint-disable linebreak-style */
 /* eslint-disable quotes */
 /**
  * @type {import('eslint').Linter.Config}
