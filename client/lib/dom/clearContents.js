@@ -1,7 +1,8 @@
+/* eslint-disable functional/immutable-data */
 
 import { getNode } from "./getNode.js";
 
-export function clearContents(node){
-  if(typeof node === 'string') node = getNode(node);
-  node.textContent = '';
+export function clearContents(node) {
+  if (typeof node === "string") node = getNode(node);
+  node.textContent = "";
 }
