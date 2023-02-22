@@ -1,6 +1,6 @@
 /* eslint-disable functional/immutable-data */
 /* eslint-disable no-unused-vars */
-import { getNode, addClass, removeClass } from "../client/lib/index.js";
+import { getNode, addClass, removeClass } from "../../client/lib/index.js";
 
 const element = document.documentElement;
 element.dataset.theme = "theme-light";
