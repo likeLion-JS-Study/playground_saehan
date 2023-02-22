@@ -28,7 +28,7 @@ module.exports = {
     // var는 사용할 수 없다
     "no-var": ["error"],
     // 줄바꿈은 윈도우 스타일로 통일하겠다
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": 0,
     // 문자열은 홑 따옴표로 정의하겠다
     // quotes: ["error", "single"],
     // 세미콜론은 사용하지 않겠다(자바스크립트 프로젝트에서는 세미콜론을 권장)
